@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Forms</title>
+</head>
+<body align="center">
+ <h1>Register form</h1>
+ <hr>
+ <br><br>
+ <form action="Thanks.html">
+ <table border="2" align="center">
+   <tr>
+     <td>
+       <h3>Fullname</h3>
+     </td>
+     <td>
+       <input type="text">
+     </td>
+   </tr>
+   <tr>
+     <td>
+       <h3>Дата рождения</h3>
+     </td>
+     <td>
+       <input type="date" name="date" value="">
+     </td>
+   </tr>
+   <tr>
+     <td>
+       <h3>Contry</h3>
+     </td>
+     <td>
+       <select name="Contry" >
+        <optgroup label="Main">
+          <option value="USA">USA</option>
+          <option value="China">China</option>
+          <option selected value="Russia">Russia</option>
+        </optgroup>
+        <optgroup label="Second">
+          <option value="Germani">Germani</option>
+          <option value="Franca">Franca</option>
+          <option value="Romania">Romania</option>
+        </optgroup>
+       </select>
+     </td>
+   </tr>
+
+    <tr>
+      <td>
+        <h3>About you</h3>
+      </td>
+      <td>
+        <textarea maxlength="100" wrap="hard" name="About you" rows="10" cols="50"></textarea>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <input type="checkbox" checked>
+        Согласен с:
+        <a target="_blank" href="Conditions.html">условиями</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <button type="submit">
+          Submet &#10004;
+        </button>
+    </td>
+    </tr>
+ </table>
+ </form>
+</body>
+</html>
