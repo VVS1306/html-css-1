@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>gallery</title>
+</head>
+<body style="text-align: center">
+<script type="text/javascript">
+// Цикл от 1 до 10
+  // var n=10;
+  // while(n>=1){
+  //   console.log(n);
+  //   n--;
+  // }
+
+// Цикл от 10 до 1
+  // var n=1;
+  // while(n<=10){
+  //   console.log(n);
+  //   n++;
+  //}
+
+// Цикл только четные числа
+  // var n=1;
+  // while(n<=10){
+  //   if( n % 2 == 0){
+  //     console.log(n);
+  //   }
+  //   n++;
+  // }
+
+  // Цикл только четные числа вывести в документ
+    // var n=1;
+    // while(n<=10){
+    //   if( n % 2 == 0){
+    //     document.write(n + '<br>');
+    //   }
+    //   n++;
+    // }
+
+// file - html - gallery
+var n=1;
+
+var w= 200;
+var h= 150;
+while (n<=9) {
+  if(n!=9){
+    document.write('<img src="http://picsum.photos/'+ w +'/'+ h +'?id='+ n +'" alt="" />');
+      if(n % 4 ==0 ){
+        document.write('<br>')
+      }
+      }else {
+      document.write('<img src="http://picsum.photos/'+ w*4 +'/'+ h*4 +'?id='+ n +'" alt="" />');
+    }
+
+  n++;
+}
+
+</script>
+</body>
+</html>
