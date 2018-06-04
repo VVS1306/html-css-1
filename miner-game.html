@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body style="font-family: monospace">
+    <!-- <script type="text/javascript">
+        var n=1;
+        while (n<=100) {
+            document.write("# ");
+            if(n%10==0){
+                document.write("<br>");
+            }
+
+            n++;
+        }
+        </script>-->
+
+
+
+
+        <!-- <script type="text/javascript">
+        ///////////////START//////////////////////
+        var row =1;
+        while (row<=10) {
+        ///////////////START - L//////////////////////
+            var col=1;
+            while (col<=10){
+                document.write("# ");
+                col++;
+
+            }
+        ////////////////FINISH - L/////////////////////
+            document.write("<br>");
+            row++;
+        }
+        ////////////////FINISH/////////////////////
+    </script> -->
+
+
+
+    <!-- <script type="text/javascript">
+        ///////////////START//////////////////////
+    var row =1;
+    while (row<=10) {
+
+    ///////////////START - L//////////////////////
+        var col=1;
+        while (col<=10){
+            if (row==1 || row==10 || col==1 || col==10){
+                document.write("# ");
+            }
+            else {
+                document.write(". ");
+            }
+            col++;
+        }
+    ////////////////FINISH - L/////////////////////
+
+        document.write("<br>");
+        row++;
+    }
+    ////////////////FINISH/////////////////////
+    </script> -->
+
+
+    <!-- <script type="text/javascript">
+        ///////////////START//////////////////////
+    var row =1;
+    while (row<=11) {
+
+    ///////////////START - L//////////////////////
+        var col=1;
+        while (col<=10){
+            if (row==1 || row==10 || col==1 || col==10){
+                document.write("# ");
+            }
+            else {
+                if (row==11){
+                document.write(col+" ");
+                }
+                else {
+                document.write(". ");
+                }
+            }
+            col++;
+        }
+    ////////////////FINISH - L/////////////////////
+
+        document.write(row+"<br>");
+        row++;
+    }
+    ////////////////FINISH/////////////////////
+    </script> -->
+
+
+    <script type="text/javascript">
+    var r = prompt("row?");
+    var c = prompt("col?");
+        ///////////////START//////////////////////
+    var row =1;
+    while (row<=11) {
+    ///////////////START - L//////////////////////
+        var col=1;
+        while (col<=10){
+            if( row==r && col==c){
+                document.write("X ");
+            }
+            else{
+
+            if (row==1 || row==10 || col==1 || col==10){
+                document.write("# ");
+            }
+            else {
+                if (row==11){
+                document.write(col+" ");
+                }
+                else {
+                document.write(". ");
+                }
+            }
+        }
+            col++;
+        }
+    ////////////////FINISH - L/////////////////////
+        document.write(row+"<br>");
+        row++;
+    }
+    ////////////////FINISH/////////////////////
+    </script>
+</body>
+</html>
