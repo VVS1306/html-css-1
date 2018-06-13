@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+    var slide_number = 1;
+
+    var slide_url_1 = "http://picsum.photos/300/200?id=300";
+    var slide_url_2 = "http://picsum.photos/300/200?id=121";
+    var slide_url_3 = "http://picsum.photos/300/200?id=133";
+
+        function showButtons(){
+            document.write('<hr />');
+            document.write('<button onclick="">prev</button>');
+            document.write('<button onclick="">next</button>');
+            }
+        function prev(){
+            slide_number--;
+            showSlide();
+        }
+        function next(){
+            slide_number++;
+            showSlide();
+        }
+
+        function showSlide(){
+            switch (slide_number) {
+                case 1:
+                    document.write('<img width="300" src="${slide_url_1}" />');
+                    break;
+                    case 2:
+                    document.write('<img width="300" src="${slide_url_2}" />');
+                    break;
+                    case 3:
+                    document.write('<img width="300" src="${slide_url_3}" />');
+                    break;
+                default:
+            }
+        }
+        showSlide();
+        showButtons();
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adaptive JS Example</title>
+</head>
+<body onload="detect();">
+    <script type="text/javascript">
+        function detect(){
+            var w = window.innerWidth;
+            if ( w > 1024){
+                alert("PS");
+            }else {
+                alert("Mobile");
+            }
+
+        }
+    </script>
+</body>
+</html>
