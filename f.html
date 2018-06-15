@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function f(value){
+            console.log(value); /// ---> display
+        }
+            f(100); /// --> undefined;
+            f(200); /// --> undefined;
+            f(300); /// --> undefined;
+
+
+        function f (){
+            return 1;
+        }
+            f();
+
+
+        function f (a,b){
+            return a + b;
+        }
+        var r = f(40,
+            f(10,
+                f(
+                    20,
+                    30
+                )
+            )
+        )
+        console.log(r);
+        /// ----> Результат 100;
+
+
+    var name = "I am global!";
+        function parent(){
+            var name = "I am global!";
+        }
+        parent();
+        console.log(name);
+
+
+        var name = "I am global!";
+            function parent(){
+                var name = "I am local!";
+                console.log(name);
+            }
+            parent();
+
+
+            var name = "I am global!";
+                function parent(){
+                    var name = "I am local!";
+                    function child(){
+                        var name = "I am mega local!";
+                    console.log(name);
+                }
+                child();
+                }
+                parent();
+
+
+
+    function f(x){
+        return x*x*x;
+    }
+    var r = f(10) f(3)/f(9*f(2));
+    console.log(r);
+
+
+
+    function p(x){
+        return function(x){
+            return x*x;
+        }
+    }
+    console.log(p(5));
+
+    function p(){
+        return function(){
+            return 100;
+        }
+    }
+    console.log(p()());   // --> вторые скобки это последовательный вызов функции
+
+        Медоты объявления функций
+        1) Casual
+        function f(){
+
+        }
+
+
+        2) Выражение expression
+        // lazy 2 и 3 (не вызовиться до объявления)
+        var f = function(){
+            code
+        }
+        f();
+
+        3) ES6+ arrow  стрелочные функции
+        var f = () => {
+            code
+        }
+        f();
+
+        Чтобы не было конфликта глобальных переменных с зарезервированными браузером и написанные разработчиком нужно
+        свой код по возможности все одевать в  function  чтобы все переменные превращались в локальные, тогда они не будут конлиутовать.
+
+        Нужно использовать самовызывающуюся функцию (безимянную функцю)
+
+        // MODULE
+        (function (){
+            var top = 100;
+            top;
+            alert(top);
+        })()
+        Если функцию одеть в скобки то ее приоретет повыситься и скобки сразу после нее вызоветь функцию без имени. Самовызывающаяся функция.
+
+    </script>
+</body>
+</html>
