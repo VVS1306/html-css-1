@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // Обьявление объектов
+        // var car = {
+        //     // properties
+        //     brand: "BMW",
+        //     kuzov: "Sedan",
+        //     volume: 4.5,
+        //     bitaia: true,
+        //
+        //     // methods
+        //     beep: function(){
+        //         alert("Beep Beep!")
+        //     }
+        //     };
+        //
+        //     // dynamic
+        //     car.volume++;
+        //     car.owner = "Bah Ma Vezi";
+        //     console.log(car);
+        // alert (car.brand);
+
+        // nav -> object... <nav style="" id = "my-name">menu...</nav>
+        var nav = {
+                // properties
+                id: "main-navigation",
+                style:{
+                    color: "red",
+                    border: "1px solid black",
+                    margin: "20px"
+                },
+                content: {
+                    href: "/about.html",
+                    text: "About US"
+                },
+                // methods
+                render: function(){
+                    document.write(`<nav id="${nav.id};
+                    style= color: ${nav.style.color};
+                    style= border: ${nav.style.border};
+                    style= margin: ${nav.style.margin}"><a href="${nav.content.href}" title="${nav.content.text}"> ${nav.content.text}</a></nav>`);
+                }
+        };
+        nav.render();
+        // alert(nav.style.margin);
+    </script>
+</body>
+</html>
