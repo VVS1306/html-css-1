@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // Declare CLASS
+        class User {
+            // structure
+            constructor( login, email, avatar, password ){
+                this.login = login;
+                this.email = email;
+                this.avatar = avatar;
+                if (password != undefined) {
+                    this.password = password;
+                }else {
+                this.password = 123;
+                }
+            }
+            render(){
+                document.write ( `<h2>${this.login}</h2>` );
+                document.write ( `<address >${this.email}</address>` );
+                document.write ( `<img src="${this.avatar}" alt="" /><img>` );
+                document.write ( `<hr> <input type="password" value="${this.password}">` );
+            }
+        }
+
+        // using the CLASS
+        var user1 = new User("iurik77", "123@mail.ru", "https://avatarfiles.alphacoders.com/725/thumb-72501.jpg", "741852");
+        var user2 = new User("murik88", "PPV@gmail.com","https://vesworld.ru/img/avatar/858.png", "712");
+        // console.log( user1 );
+        // console.log( user2 );
+        user1.render();
+        user2.render();
+
+
+
+    </script>
+
+
+</body>
+</html>
