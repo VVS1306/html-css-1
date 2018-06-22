@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+//     // 1 DRY
+//     // 2 Hierarchy
+//     // 3 Polymorphism - толпа людей может быть студентами, отцами, водителями (другая роль, новые свойства новые возможности новые требования)
+//         -->   Student  --> new ... ().
+// Person  -->   Theacher
+//         -->   Director
+//
+// // Базовый класс в js
+// Object --> Product
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// base class / superclass
+class Car {
+    // brand, model, year, power
+    constructor() {
+        this.brand = "Mercedes";
+    }
+
+    about (){
+        alert (`This is a ${this.brand} - CAR!!`);
+    }
+
+
+
+}
+    // extendet class / inheriting
+    class SportCar extends Car {
+        // acceleration
+        // about (){
+        //     alert ("This is a SportCAR!");
+        // }
+    }
+    // class HeavyCar extends Car {
+    //     // capacity
+    // }
+    // class MilitaryCar extends Car {
+    //     // armour
+    // }
+//                 --> SportCar    --> object1, object2
+// Object --> Car  --> HeavyCar    --> object3, object5
+//                 --> MilitaryCar --> object4, object6
+
+//////////////////////// creating objects /////////////////////////////////////
+var c = new Car();
+    c.about();
+    var sc = new SportCar();
+        sc.about();
+    </script>
+</body>
+</html>
