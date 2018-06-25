@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        Static <>Dinamic
+
+        Static:
+        now
+        not in object
+        common
+        Принадлежит классу
+
+        Dinamic:
+        future
+        object
+        personal
+        Не принадлежат классу
+
+// Как обьявлять в классах статичные и динамичные элементы
+//Dinamic
+class Car {
+    constructor() {
+        this.model = model;
+    }
+}
+var c1 = Car("BMW");
+var c2 = Car("Mercedes");
+
+// Static
+class Car {
+    static whosDirector(){
+        console.log("Ion");
+    }
+    constructor() {
+        this.model = model;
+
+    }
+}
+// var c1 = new Car("BMW");
+// var c2 = new Car("Mercedes");
+
+Car.whosDirector();
+
+// c1.whosDirector();
+// c2.whosDirector();
+
+////////////////////////////////////////////////////////////////////////////////////
+String & Array
+String -----> text
+Array  -----> collections
+Zadanie:
+С клавиатуры вводиться список адресов картинок в виде строки, где эти адреса разделены запятой.
+var urls = prompt ("enter some urls delimited by comma");
+вывести эти адреса в документ так чтобы каждый новый адрес перешел на новую строку
+document.write (urls.replace(",","<br>").replace(",","<br>").replace(",","<br>"));
+    </script>
+</body>
+</html>
