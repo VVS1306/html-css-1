@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+// exempel 1
+        // var url = prompt("enter adres");
+        // // external / local
+        // if (url.startsWith ("https")){
+        //     console.info("An external resource! Secured!");
+        // } else{ if (url.startsWith ("http")) {
+        //     console.info("An external resource! Non Secured!");
+        // }else {
+        //     console.log("A local resource!");
+        // }
+        // }
+        // Domashka
+        /// Из адресов видушек ютуба попытатся вытащить айди видео. Айди после знака равно
+        // indexof - находит знак равно
+        // supstring - копирует строку до конца от знака равно
+
+// exempl 2
+//         const USERNAME = "admin";
+//         const PASSWORD = "123456";
+//         // user input
+//         var username = prompt ("your login: ");
+//         var password = prompt ("your password: ");
+// // 1) Caps
+// if (username.toUpperCase() == username) {
+//     alert("Your caps might be activ!")
+// }
+// // 2) Whitespace
+// username = username.trim();
+//
+//         if (username == USERNAME && password == PASSWORD ){
+//             alert ("Welcome!");
+//         }else{
+//             alert("Denied!");
+//         }
+
+// exempl 3
+        var email = prompt("your email adress");
+        // validate email adress
+        if (email.indexOf("@")>0
+        &&
+        email.indexOf("@") + 1
+        // &&
+        // email.indexOf(".") != email.length - 1
+        // !email.endsWith(".");
+        {
+            alert("Adress OK!");
+        }else{
+            alert("Invalid eror");
+        }
+    </script>
+</body>
+</html>
