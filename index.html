@@ -1,33 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Photo Album</title>
-  <style>
-    body { background: url(Photos/Phone.png); }
-  </style>
+    <meta charset="UTF-8">
+    <title>Array carusel Example</title>
+    <link rel="stylesheet" href="carusel.css">
 </head>
 <body>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <h1 align="center">Photo Albom</h1>
-  <br>
-  <table bgcolor="black" border="2" align="center">
-    <tr>
-      <td ><a href="Pages/1.html"><img width="200" src="Photos/1.jpeg" alt="Огоньки"></a></td>
-      <td ><a href="Pages/2.html"><img width="200" src="Photos/2.jpeg" alt="Пляж ЧБ"></a></td>
-      <td ><a href="Pages/3.html"><img width="200" src="Photos/3.jpeg" alt="Трава"></a></td>
-      <td ><a href="Pages/4.html"><img width="200" src="Photos/4.jpeg" alt="Одиночество"></a></td>
-      <td ><a href="Pages/5.html"><img width="200" src="Photos/5.jpeg" alt="Река"></a></td>
-    </tr>
-  </table>
+    <div id ="carusel">
+
+    </div>
+    <hr>
+    <button onclick="prev();" type="button" name="button">PREV</button>
+    <button onclick="next();" type="button" name="button">NEXT</button>
+
+    <script src="Karusel.js"></script>
+    <!-- document.body.children[0].innerHTML -->
+
 </body>
 </html>
