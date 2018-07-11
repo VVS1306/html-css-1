@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="your name pls...">
+    <button onclick="say();">SAY IT!</button>
+    <div class="message">
+
+    </div>
+    <script>
+        function say(){
+            var input = document.body.firstElementChild;
+            // копируем значение инпута в валью
+            var name = input.value;
+            var div = document.getElementById('message');
+                div.innerHTML =`Hello, ${name}!`;
+
+        }
+    </script>
+</body>
+</html>
