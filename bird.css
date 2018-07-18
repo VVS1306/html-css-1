@@ -2,6 +2,8 @@
     height: 48px;
     width: 48px;
     border: 1px solid green;
+    display: inline-block;
+    position: absolute;
 }
 .bird.red{
     background-image: url("../Images/bird-red.png");
