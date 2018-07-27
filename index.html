@@ -2,19 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Array carusel Example</title>
-    <link rel="stylesheet" href="carusel.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
 </head>
 <body>
-    <div id ="carusel">
-
-    </div>
-    <hr>
-    <button onclick="prev();" type="button" name="button">PREV</button>
-    <button onclick="next();" type="button" name="button">NEXT</button>
-
-    <script src="Karusel.js"></script>
-    <!-- document.body.children[0].innerHTML -->
-
+    <h2>Curs valut</h2>
+    <input id="cur1" type="text" placeholder="suma" onkeyup="convert();">EUR
+    <br>
+    <br>
+    <input id="cur2" type="text" disabled>
+    <select name="valuta" id="val">
+        <option value="0">------currency----</option>
+    </select>
+    <br>
+    <button>Calculate</button>
+    <div id="result"></div>
+    <script src="calculator.js">
+    </script>
 </body>
 </html>
