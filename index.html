@@ -5,20 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="snake.css">
 </head>
 <body>
-    <h2>Curs valut</h2>
-    <input id="cur1" type="text" placeholder="suma" onkeyup="convert();">EUR
-    <br>
-    <br>
-    <input id="cur2" type="text" disabled>
-    <select name="valuta" id="val">
-        <option value="0">------currency----</option>
-    </select>
-    <br>
-    <button>Calculate</button>
-    <div id="result"></div>
-    <script src="calculator.js">
-    </script>
+    <canvas id="map" width="500" height="500">
+
+    </canvas>
+    <script src="js/snake.js"></script>
+    <script src="js/bomb.js"></script>
+    <script src="js/game.js"></script>
+    
 </body>
 </html>
